@@ -1,0 +1,48 @@
+/* Переваги */
+.benefits-section {
+    padding-bottom: 0;
+}
+.benefits-section__list {
+    display: flex;
+}
+
+.benefits-section__list .benefits-section__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.benefits-section__item {
+    width: 270px;
+}
+
+.benefits-section__thumb {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: var(--bg-secondary-color);
+}
+
+.benefits-section__icon {
+    width: 70px;
+    height: 70px;
+}
+
+.benefits-section__title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.benefits-section__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}

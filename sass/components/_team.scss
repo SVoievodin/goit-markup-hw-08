@@ -1,0 +1,78 @@
+/* Наша команда */
+.team-section {
+    background-color: $bg-secondary-color;
+}
+
+.team-section__list {
+    display: flex;
+}
+
+.team-section__item {
+    display: block;
+    width: 270px;
+    background-color: $white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+&:not(:last-child) {
+    margin-right: 30px;
+}}
+
+
+
+.team-section__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+
+.team-section__text {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+    margin-bottom: 16px;
+}
+
+.team-section__signature {
+    padding: 30px 32px;
+}
+
+.team-social {
+    display: flex;
+    width: 206px;
+    height: 44px;
+
+}
+
+.team-social__item {&:not(:last-child) {
+    margin-right: 10px;}
+}
+
+.team-social__link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+    fill: $client-logo-color;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+    background-color: $accent-color;
+    fill: $white-color;
+}}
+
+.team-social__icon {
+    width: 20px;
+    height: 20px;
+}
+
