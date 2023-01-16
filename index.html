@@ -23,16 +23,62 @@
       <!-- навігація -->
       <div class="container page-header">
         <nav class="page-header__nav">
-          <a href="./index.html" class="logo">Web<span class="logo--black">Studio</span></a>
+          <a href="./index.html" class="logo"> Web<span class="logo--black">Studio</span></a>
+
+          <!-- Кнопка меню -->
+          <button class="menu-button js-open-menu" type="button">
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <!-- Меню для мобілки -->
+          <div class="js-menu-container">
+            <button class="menu-button js-close-menu" type="button">
+              <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                <use class="icon-cross" href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <!-- закладки мобілки -->
+            <ul class="menu-nav">
+              <li class="menu-nav__bookmark">
+                <a class="menu-nav__link menu-nav__link--current" href="./index.html">Студія</a>
+              </li>
+              <li class="menu-nav__bookmark">
+                <a class="menu-nav__link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="menu-nav__bookmark"><a class="menu-nav__link" href="#">Контакти</a></li>
+            </ul>
+            <!-- контакти мобілки -->
+            <ul class="menu-contact">
+              <li class="menu-contact__item">
+                <a class="menu-contact__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+              <li class="menu-contact__item">
+                <a class="menu-contact__mail" href="mailto:info@devstudio.com">info@devstudio.com </a>
+              </li>
+            </ul>
+            <!-- соц мережі мобілки -->
+            <ul class="menu-social">
+              <li class="menu-social__item"><a class="menu-social__link" href="#">Instagram</a></li>
+              <li class="menu-social__item"><a class="menu-social__link" href="#">Twitter</a></li>
+              <li class="menu-social__item"><a class="menu-social__link" href="#">Facebook</a></li>
+              <li class="menu-social__item"><a class="menu-social__link" href="#">LinkedIn</a></li>
+            </ul>
+          </div>
           <ul class="page-header__bookmarks">
-            <li class="page-header__item"><a class="page-header__link page-header__link--current" href="./index.html">Студія</a></li>
-            <li class="page-header__item"><a class="page-header__link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="page-header__item">
+              <a class="page-header__link page-header__link--current" href="./index.html">Студія</a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link" href="./portfolio.html">Портфоліо</a>
+            </li>
             <li class="page-header__item"><a class="page-header__link" href="#">Контакти</a></li>
           </ul>
         </nav>
+
         <!-- контакти -->
         <ul class="page-header__connection">
-                    <li class="page-header__item">
+          <li class="page-header__item">
             <a class="page-header__contact" href="mailto:info@devstudio.com"
               ><svg class="page-header__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use></svg
@@ -57,7 +103,9 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button type="button" class="button button--margins" data-modal-open>Замовити послугу</button>
+          <button type="button" class="button button--margins" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!-- Переваги -->
@@ -67,7 +115,9 @@
           <ul class="benefits-section__list">
             <li class="benefits-section__item">
               <div class="benefits-section__thumb">
-                <svg class="benefits-section__icon"><use href="./images/icons.svg#icon-antenna"></use></svg>
+                <svg class="benefits-section__icon">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
               </div>
               <h3 class="benefits-section__title">Увага до деталей</h3>
               <p class="benefits-section__text">
@@ -76,7 +126,9 @@
             </li>
             <li class="benefits-section__item">
               <div class="benefits-section__thumb">
-                <svg class="benefits-section__icon"><use href="./images/icons.svg#icon-clock"></use></svg>
+                <svg class="benefits-section__icon">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
               </div>
               <h3 class="benefits-section__title">Пунктуальність</h3>
               <p class="benefits-section__text">
@@ -85,7 +137,9 @@
             </li>
             <li class="benefits-section__item">
               <div class="benefits-section__thumb">
-                <svg class="benefits-section__icon"><use href="./images/icons.svg#icon-diagram"></use></svg>
+                <svg class="benefits-section__icon">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
               </div>
               <h3 class="benefits-section__title">Планування</h3>
               <p class="benefits-section__text">
@@ -316,9 +370,7 @@
     <footer class="page-footer">
       <div class="container container--flex">
         <div>
-          <a href="./index.html" class="logo"
-            >Web<span class="logo--white">Studio</span></a
-          >
+          <a href="./index.html" class="logo">Web<span class="logo--white">Studio</span></a>
           <address class="footer-contacts">
             <ul class="footer-contacts__list">
               <li class="footer-contacts__item">
@@ -331,10 +383,14 @@
                 >
               </li>
               <li class="footer-contacts__item">
-                <a class="footer-contacts__connection" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="footer-contacts__connection" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="footer-contacts__item">
-                <a class="footer-contacts__connection" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="footer-contacts__connection" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -385,8 +441,6 @@
       </div>
     </footer>
 
-
-
     <!-- Модалка -->
 
     <div class="backdrop is-hidden" data-modal>
@@ -436,5 +490,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
