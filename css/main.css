@@ -51,7 +51,12 @@ li {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 
 .visually-hidden {
@@ -245,44 +250,54 @@ header {
 
 /* Герой */
 .hero-section {
+  height: 400px;
   align-items: center;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroimage.jpg);
   max-width: 1600px;
-  height: 600px;
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 118px 0;
+}
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    height: 600px;
+    padding: 200px 0;
+  }
 }
 
 .hero-section__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
-  margin-top: 0;
   margin-bottom: 30px;
+  color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .hero-section__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 /* Переваги */
 .benefits-section {
   padding-bottom: 0;
 }
-
-.benefits-section__list {
-  display: flex;
+@media screen and (min-width: 798px) {
+  .benefits-section__list {
+    display: flex;
+  }
 }
-
-.benefits-section__list .benefits-section__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .benefits-section__item {
-  width: 270px;
+  width: 100%;
+  margin-bottom: 30px;
 }
-
+.benefits-section__item:last-child {
+  margin-bottom: 60px;
+}
 .benefits-section__thumb {
   display: block;
   display: flex;
@@ -291,24 +306,26 @@ header {
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
-  background-color: var(--bg-secondary-color);
+  background-color: #f5f4fa;
 }
-
 .benefits-section__icon {
   width: 70px;
   height: 70px;
 }
-
 .benefits-section__title {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-
+@media screen and (min-width: 798px) {
+  .benefits-section__title {
+    text-align: left;
+  }
+}
 .benefits-section__text {
   font-size: 14px;
   line-height: 1.71;
@@ -316,14 +333,32 @@ header {
   color: var(--secondary-text-color);
 }
 
+.benefits-section__list .benefits-section__item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* Чим ми займаємось */
+@media screen and (max-width: 1199px) {
+  .hide-doing {
+    display: none;
+  }
+}
+
 h2 {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
+  margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .doing {
@@ -363,22 +398,33 @@ h2 {
 .team-section {
   background-color: #f5f4fa;
 }
-
-.team-section__list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .team-section__list {
+    display: flex;
+  }
 }
-
 .team-section__item {
   display: block;
-  width: 270px;
+  width: 100%;
+  margin-bottom: 30px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.team-section__item:last-child {
+  margin-bottom: 0;
+}
 .team-section__item:not(:last-child) {
   margin-right: 30px;
 }
-
+.team-section__photo {
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .team-section__photo {
+    width: 270px;
+  }
+}
 .team-section__title {
   font-weight: 500;
   font-size: 16px;
@@ -387,7 +433,6 @@ h2 {
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
-
 .team-section__text {
   font-size: 16px;
   line-height: 1.18;
@@ -396,7 +441,6 @@ h2 {
   color: #757575;
   margin-bottom: 16px;
 }
-
 .team-section__signature {
   padding: 30px 32px;
 }
@@ -405,12 +449,11 @@ h2 {
   display: flex;
   width: 206px;
   height: 44px;
+  margin: 0 auto;
 }
-
 .team-social__item:not(:last-child) {
   margin-right: 10px;
 }
-
 .team-social__link {
   display: inline-block;
   width: 44px;
@@ -424,7 +467,6 @@ h2 {
   background-color: #2196f3;
   fill: #ffffff;
 }
-
 .team-social__icon {
   width: 20px;
   height: 20px;
