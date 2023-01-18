@@ -7,11 +7,20 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
+    margin: 16px 0;
     
-@media screen and (max-width: 767px) {
-        margin: 16px 0;
-    }
     
+}
+
+.logo-footer {
+display: inline-block;
+    color: $accent-color;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 .logo--black {
