@@ -1,18 +1,25 @@
 /* Переваги */
 .benefits-section {
-    padding-bottom: 0;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {padding-bottom: 0;}
 
-&__list {
-    @media screen and (min-width: 798px) {
-        display: flex;}}
+&__list { 
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;}}
 
 &__item {
-    width: 100%;
+    width: 450px;
     margin-bottom: 30px;
-    &:last-child {
-            margin-bottom: 60px;        }
-        // width: 270px; для десктопа
-        }
+   
+
+        @media screen and (min-width: 768px) {
+            width: 354px; 
+            margin: 15px;       }
+        @media screen and (min-width: 1200px) {
+            width: 270px;  
+            margin: 15px;      }}
 
 &__thumb {
     display: block;
@@ -46,9 +53,7 @@
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);}}
     
-.benefits-section__list .benefits-section__item:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 
 
