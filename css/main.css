@@ -1123,7 +1123,7 @@ h2 {
 .menu-nav__link {
   font-weight: 500;
   font-size: 40px;
-  line-height: 1, 75;
+  line-height: 1.75;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #212121;
@@ -1141,7 +1141,7 @@ h2 {
 .menu-contact__mail {
   font-weight: 500;
   font-size: 24px;
-  line-height: 1, 16;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
@@ -1149,7 +1149,7 @@ h2 {
 .menu-contact__tel {
   font-weight: 500;
   font-size: 34px;
-  line-height: 1, 17;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: #2196f3;
   text-decoration: none;
@@ -1170,7 +1170,7 @@ h2 {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 1, 22;
+  line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
   text-decoration: none;
