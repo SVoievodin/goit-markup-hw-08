@@ -33,39 +33,52 @@
           </button>
           <!-- Меню для мобілки -->
           <div class="js-menu-container">
-            <button class="menu-button js-close-menu" type="button">
+            
+            <div class="menu-column">
+              <!-- закладки мобілки -->
+              <button class="menu-button js-close-menu" type="button">
               <svg width="40" height="40" aria-label="Перемикач мобільного меню">
                 <use class="icon-cross" href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
-            <!-- закладки мобілки -->
             <ul class="menu-nav">
-              <li class="menu-nav__bookmark">
-                <a class="menu-nav__link menu-nav__link--current" href="./index.html">Студія</a>
-              </li>
-              <li class="menu-nav__bookmark">
-                <a class="menu-nav__link" href="./portfolio.html">Портфоліо</a>
-              </li>
-              <li class="menu-nav__bookmark"><a class="menu-nav__link" href="#">Контакти</a></li>
-            </ul>
-            <!-- контакти мобілки -->
-            <ul class="menu-contact">
-              <li class="menu-contact__item">
-                <a class="menu-contact__tel" href="tel:+380961111111">+38 096 111 11 11</a>
-              </li>
-              <li class="menu-contact__item">
-                <a class="menu-contact__mail" href="mailto:info@devstudio.com"
-                  >info@devstudio.com
-                </a>
-              </li>
-            </ul>
-            <!-- соц мережі мобілки -->
-            <ul class="menu-social">
-              <li class="menu-social__item"><a class="menu-social__link" href="#">Instagram</a></li>
-              <li class="menu-social__item"><a class="menu-social__link" href="#">Twitter</a></li>
-              <li class="menu-social__item"><a class="menu-social__link" href="#">Facebook</a></li>
-              <li class="menu-social__item"><a class="menu-social__link" href="#">LinkedIn</a></li>
-            </ul>
+                <li class="menu-nav__bookmark">
+                  <a class="menu-nav__link menu-nav__link--current" href="./index.html">Студія</a>
+                </li>
+                <li class="menu-nav__bookmark">
+                  <a class="menu-nav__link" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="menu-nav__bookmark"><a class="menu-nav__link" href="#">Контакти</a></li>
+              </ul>
+              <div class="menu-thumb">
+                <!-- контакти мобілки -->
+                <ul class="menu-contact">
+                  <li class="menu-contact__item">
+                    <a class="menu-contact__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                  </li>
+                  <li class="menu-contact__item">
+                    <a class="menu-contact__mail" href="mailto:info@devstudio.com"
+                      >info@devstudio.com
+                    </a>
+                  </li>
+                </ul>
+                <!-- соц мережі мобілки -->
+                <ul class="menu-social">
+                  <li class="menu-social__item">
+                    <a class="menu-social__link" href="#">Instagram</a>
+                  </li>
+                  <li class="menu-social__item">
+                    <a class="menu-social__link" href="#">Twitter</a>
+                  </li>
+                  <li class="menu-social__item">
+                    <a class="menu-social__link" href="#">Facebook</a>
+                  </li>
+                  <li class="menu-social__item">
+                    <a class="menu-social__link" href="#">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <ul class="page-header__bookmarks">
             <li class="page-header__item">
@@ -490,21 +503,19 @@
           </ul>
         </div>
         <!-- Форма "Підписатися" -->
-      <div class="subscribe">
-        <p class="subscribe__title">Підпишіться на розсилку</p>
-        <form class="subscribe__form" name="subscribe-form">
-          
+        <div class="subscribe">
+          <p class="subscribe__title">Підпишіться на розсилку</p>
+          <form class="subscribe__form" name="subscribe-form">
             <input class="subscribe__input" type="email" name="email" placeholder="E-mail" />
-          
-          <button class="button" type="submit">
-            Підписатися<svg class="button__icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-iconsend"></use>
-            </svg>
-          </button>
-        </form>
+
+            <button class="button" type="submit">
+              Підписатися<svg class="button__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-iconsend"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
-      </div>
-      
     </footer>
 
     <!-- Модалка -->
